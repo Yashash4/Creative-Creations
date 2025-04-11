@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import { FiMenu, FiX } from 'react-icons/fi';
 
-
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -19,7 +18,6 @@ const Navbar = () => {
 
       <div className="menu-icon" onClick={toggleMenu}>
         {menuOpen ? <FiX /> : <FiMenu />}
-
       </div>
 
       <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
