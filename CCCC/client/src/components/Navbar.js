@@ -1,29 +1,35 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import { FiMenu, FiX } from 'react-icons/fi';
 
-function Navbar() {
-  const [open, setOpen] = useState(false);
+
+const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   return (
     <nav className="navbar">
-      <div className="nav-container">
-        <div className="logo">
-          Creative Creations
-        </div>
-        <ul className={`nav-links ${open ? 'open' : ''}`}>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Expertise</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div className="menu-toggle" onClick={() => setOpen(!open)}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+      <div className="logo">
+        <span className="brand-main">Creative Creations</span>
+        <span className="brand-sub">Clothing Company</span>
       </div>
+
+      <div className="menu-icon" onClick={toggleMenu}>
+        {menuOpen ? <FiX /> : <FiMenu />}
+
+      </div>
+
+      <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
+        <li><a href="#home" onClick={toggleMenu}>Home</a></li>
+        <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
+        <li><a href="#about" onClick={toggleMenu}>About</a></li>
+        <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
+      </ul>
     </nav>
   );
-}
+};
 
 export default Navbar;
