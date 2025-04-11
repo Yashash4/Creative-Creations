@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import { FiMenu, FiX } from 'react-icons/fi';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,15 +8,18 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  // Use simple text or HTML entities as fallback
+  const menuIcon = menuOpen ? "✕" : "☰";
+
   return (
     <nav className="navbar">
       <div className="logo">
         <span className="brand-main">Creative Creations</span>
-        <span className="brand-sub">Clothing Company</span>
+        <span className="brand-main">Clothing Company</span>
       </div>
 
       <div className="menu-icon" onClick={toggleMenu}>
-        {menuOpen ? <FiX /> : <FiMenu />}
+        {menuIcon}
       </div>
 
       <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
