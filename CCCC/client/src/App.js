@@ -5,12 +5,15 @@ import About from './components/About';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import BackgroundVideo from './components/BackgroundVideo';
+
 import './App.css';
 
 function App() {
   return (
     <div>
       <Navbar />
+      <BackgroundVideo />
       <Hero />
       <About />
       <Services />
