@@ -1,0 +1,21 @@
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .service-item {
+    padding: 20px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    transition: transform 0.3s;
+  }
+  .service-item:hover {
+    transform: translateY(-5px);
+  }
+  .service-item h3 {
+    color: #007BFF;
+    margin-bottom: 10px;
+  }
+  

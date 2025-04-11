@@ -1,0 +1,10 @@
+.about {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+  .about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  

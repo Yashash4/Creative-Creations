@@ -1,0 +1,15 @@
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  .footer-links {
+    margin-bottom: 10px;
+  }
+  .footer-links a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
