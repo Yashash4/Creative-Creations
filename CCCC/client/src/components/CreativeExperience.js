@@ -10,26 +10,27 @@ function CreativeExperience() {
       </p>
       <div className="ce-grid">
         <div className="ce-card green">
-          <h3>Fabric Sourcing</h3>
+          <h3>Vertically Integrated</h3>
           <p>
-            High-quality materials from trusted suppliers to meet your exact design and comfort needs.
+          80% of our mills are directed to our own factories.
           </p>
         </div>
         <div className="ce-card purple">
-          <h3>Smart Manufacturing</h3>
+          <h3>Investing in Employees</h3>
           <p>
-            Our automated, streamlined processes ensure speed, precision, and consistency at scale.
+            86,000+ female employees trained under P.A.C.E.          
           </p>
         </div>
         <div className="ce-card orange">
-          <h3>Quality First</h3>
+          <h3>Design-led Innovation</h3>
           <p>
-            Each garment is rigorously inspected to match international standards and your expectations.
+          90+ designers across all business verticals.
           </p>
         </div>
         <div className="ce-card blue">
+        <h3>Driving Sustainability</h3>
           <p>
-            We ship across the world — fast, reliable, and secure from our factory floor to your doorstep.
+            100% renewable electrical energy by 2026.
           </p>
         </div>
       </div>
