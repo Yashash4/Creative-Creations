@@ -1,51 +1,59 @@
+/* Two Cards Section */
 .two-cards-section {
-    padding: 4rem 2rem;
-    background-color: #f0f8ff;
-    text-align: center;
-  }
-  
-  .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
-  .card {
-    background-color: #fff;
-    border: 3px solid #001f3f;
-    border-radius: 15px;
-    padding: 2rem;
-    flex: 1 1 350px;
-    max-width: 500px;
-    transition: box-shadow 0.3s ease;
-  }
-  
-  .card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card h3 {
-    font-size: 2rem;
-    color: #001f3f;
-    margin-bottom: 1rem;
-  }
-  
-  .card p {
-    font-size: 1.1rem;
-    color: #333;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-  }
-  
-  .card ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .card ul li {
-    font-size: 1rem;
-    color: #001f3f;
-    margin: 0.5rem 0;
-  }
-  
+  padding: 4rem 2rem;
+  background-color: #001f3f; /* Navy Blue background */
+  text-align: center;
+}
+
+/* Cards Container */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Individual Card */
+.card {
+  background-color: #001f3f; /* Same as section background to avoid white */
+  border: 3px solid #106ebe; /* Blue border for the card */
+  border-radius: 15px;
+  padding: 2rem;
+  flex: 1 1 350px;
+  max-width: 500px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect for Cards */
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+  transform: translateY(-5px); /* Slight lift effect */
+}
+
+/* Card Heading */
+.card h3 {
+  font-size: 2.3rem;
+  color: #ffffff; /* White text */
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Card Paragraph */
+.card p {
+  font-size: 1.2rem;
+  color: #ffffff; /* White text for readability */
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Card List */
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card ul li {
+  font-size: 1rem;
+  color: #ffffff; /* White text */
+  margin: 0.5rem 0;
+}

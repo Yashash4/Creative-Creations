@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #106EBE;
-  --accent-color: #0FFCBE;
+  --accent-color: #66ccff; /* Replaced mint with soft blue */
 }
 
 .navbar {
@@ -29,7 +29,7 @@
   font-size: 2rem;
   font-weight: 700;
   color: var(--accent-color);
-  text-shadow: 2px 2px 5px rgba(0, 255, 190, 0.2);
+  text-shadow: 2px 2px 5px rgba(102, 204, 255, 0.3); /* Blue glow */
 }
 
 .brand-sub {

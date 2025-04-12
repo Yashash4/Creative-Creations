@@ -1,10 +1,34 @@
 .about {
-    max-width: 800px;
-    margin: auto;
-    text-align: center;
-  }
-  .about p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-  
+  padding: 60px 20px;
+  background-color: #001f3f; /* Navy Blue Background */
+  color: #ffffff;
+}
+
+.about h2 {
+  font-size: 2.4em;
+  margin-bottom: 20px;
+  color: #66ccff; /* Light blue heading */
+}
+
+.about p {
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #bfe5ff; /* Soft blue text */
+}
+
+/* Card & Button Hover Effects */
+.card {
+  background-color: #ffffff;
+  border: 3px solid #001f3f;
+  border-radius: 15px;
+  padding: 2rem;
+  flex: 1 1 350px;
+  max-width: 500px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+}

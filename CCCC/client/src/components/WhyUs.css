@@ -1,42 +1,48 @@
+/* Why Us Section */
 .whyus-section {
-  background-color: #0a3d62; /* Navy blue */
+  background-color: #001f3f; /* Navy blue background */
   padding: 60px 0;
   overflow: hidden;
-  color: white;
+  color: white; /* White text for contrast */
   width: 100%;
 }
 
+/* Why Us Container */
 .whyus-container {
   width: 100%;
   overflow: hidden;
   position: relative;
 }
 
+/* Scrolling Track */
 .whyus-track {
   display: flex;
-  animation: scroll 160s linear infinite;
+  animation: scroll 220s linear infinite;
   gap: 16px;
   width: max-content;
 }
 
+/* Individual Why Us Card */
 .whyus-card {
-  background-color: #0ffcbe; /* Mint green */
-  color: #0a3d62; /* Navy text */
+  background-color: #106ebe; /* Adjusted to blue */
+  color: white; /* White text */
   padding: 16px;
   min-width: 200px;
   border-radius: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   flex-shrink: 0;
   text-align: center;
-  font-size: 0.95rem;
+  font-size: 1.3rem;
   font-weight: 500;
   transition: transform 0.3s ease;
 }
 
+/* Hover Effect on Why Us Card */
 .whyus-card:hover {
   transform: scale(1.05);
 }
 
+/* Scroll Animation for Cards */
 @keyframes scroll {
   0% {
     transform: translateX(0%);

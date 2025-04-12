@@ -1,34 +1,84 @@
+/* Clients Section */
 .clients-section {
-    padding: 4rem 2rem;
-    background-color: #fff;
-    text-align: center;
-  }
-  
+  padding: 4rem 2rem;
+  background-color: #001f3f;  /* Navy Blue background */
+  color: #ffffff;  /* White text for contrast */
+  text-align: center;
+}
+
+/* Clients Text */
+.clients-text h2 {
+  font-size: 2.5rem;
+  color: #ffffff; /* White text for the heading */
+  margin-bottom: 1rem;
+}
+
+.clients-text p {
+  font-size: 1.5rem;
+  color: #bfe5ff;  /* Light blue text for paragraph */
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 1rem;
+}
+
+/* Clients Logos Container */
+.clients-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Individual Logo Styling */
+.logo-item img {
+  max-width: 250px;  /* Increased max-width for larger logos */
+  max-height: 120px; /* Adjusted max-height */
+  object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
   .clients-text h2 {
-    font-size: 2.5rem;
-    color: #001f3f;
-    margin-bottom: 1rem;
+    font-size: 2rem;
   }
-  
+
   .clients-text p {
-    font-size: 1.1rem;
-    color: #333;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto 1rem;
+    font-size: 1.2rem;
   }
-  
-  .clients-logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
-  }
-  
+
   .logo-item img {
-    max-width: 150px;
-    max-height: 80px;
-    object-fit: contain;
+    max-width: 200px; /* Smaller logos on medium screens */
+    max-height: 100px;
   }
-  
+}
+
+@media (max-width: 768px) {
+  .clients-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .clients-text p {
+    font-size: 1rem;
+  }
+
+  .logo-item img {
+    max-width: 150px; /* Even smaller logos on small screens */
+    max-height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .clients-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .clients-text p {
+    font-size: 1rem;
+  }
+
+  .logo-item img {
+    max-width: 120px; /* Smaller logos on very small screens */
+    max-height: 80px;
+  }
+}

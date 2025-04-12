@@ -1,45 +1,51 @@
+/* Gallery Section */
 .gallery-section {
-    overflow: hidden;
-    background-color: #fff;
-    padding: 2rem 0;
+  overflow: hidden;
+  background-color: #001f3f; /* Navy blue background */
+  padding: 2rem 0;
+}
+
+/* Gallery Container */
+.gallery-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Scrolling Track */
+.gallery-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+/* Gallery Item */
+.gallery-item {
+  flex: 0 0 auto;
+  margin: 0 1rem;
+}
+
+/* Image Styling */
+.gallery-item img {
+  height: 200px;
+  width: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 31, 63, 0.2); /* Soft shadow for depth */
+}
+
+/* Gallery Note Styling */
+.gallery-note {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #bfe5ff; /* Light blue text for contrast */
+}
+
+/* Keyframes for continuous right-to-left scroll */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-  
-  .gallery-container {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+  100% {
+    transform: translateX(-50%);
   }
-  
-  .gallery-track {
-    display: flex;
-    animation: scroll 20s linear infinite;
-  }
-  
-  .gallery-item {
-    flex: 0 0 auto;
-    margin: 0 1rem;
-  }
-  
-  .gallery-item img {
-    height: 200px;
-    width: auto;
-    border-radius: 8px;
-  }
-  
-  .gallery-note {
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    color: #555;
-  }
-  
-  /* Keyframes for continuous right-to-left scroll */
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-  
+}

@@ -1,45 +1,56 @@
+/* Contact Section */
 .contact-section {
   padding: 4rem 2rem;
-  background-color: #f0f8ff;
+  background-color: #001f3f;  /* Navy Blue background */
+  color: #ffffff;  /* White text for contrast */
   text-align: center;
 }
 
+/* Contact Container */
 .contact-container {
   max-width: 600px;
   margin: 0 auto;
 }
 
+/* Contact Heading */
 .contact-container h2 {
-  font-size: 2.5rem;
-  color: #001f3f;
+  font-size: 2.8rem;
+  color: #ffffff; /* White heading color */
   margin-bottom: 1.5rem;
 }
 
+/* Contact Form Styles */
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem; /* Slightly increased gap for better spacing */
 }
 
+/* Input and Textarea Styles */
 .contact-form input,
 .contact-form textarea {
   padding: 0.8rem;
-  border: 2px solid #001f3f;
+  border: 2px solid #ffffff;  /* White border for inputs */
   border-radius: 8px;
   font-size: 1rem;
+  color: #001f3f;  /* Navy blue text for inputs */
+  background-color: #f0f8ff;  /* Light background for inputs */
 }
 
+/* Submit Button Style */
 .contact-form button {
   padding: 0.8rem;
   border: none;
   border-radius: 8px;
-  background-color: #001f3f;
-  color: #fff;
-  font-size: 1.1rem;
+  background-color: #66ccff;  /* Replaced Mint with Soft Blue */
+  color: #001f3f;  /* Navy blue text */
+  font-size: 1.4rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Button Hover Effect */
 .contact-form button:hover {
-  background-color: #003366;
+  background-color: #106EBE;  /* Darker blue for hover effect */
+  box-shadow: 0 0 12px rgba(16, 110, 190, 0.6);  /* Soft shadow for hover effect */
 }

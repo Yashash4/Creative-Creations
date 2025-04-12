@@ -1,46 +1,68 @@
+/* Values Section */
 .values-section {
-    padding: 4rem 2rem;
-    background-color: #f7f7f7;
-    text-align: center;
+  padding: 4rem 2rem;
+  background-color: #001f3f;  /* Navy Blue background */
+  color: #ffffff;  /* White text for contrast */
+  text-align: center;
+}
+
+/* Values Text */
+.values-heading h2 {
+  font-size: 3rem;
+  color: #ffffff; /* White text for the heading */
+  margin-bottom: 2rem;
+}
+
+/* Values Cards Container */
+.values-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Individual Card Styling */
+.value-card {
+  background-color: #66ccff; /* Soft light blue background for cards */
+  border: 2px solid #001f3f; /* Navy border */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  flex: 1 1 300px;
+  max-width: 350px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.value-card:hover {
+  transform: scale(1.05);
+}
+
+/* Card Title */
+.value-card h3 {
+  font-size: 2.1rem;
+  color: #001f3f; /* Navy text for titles */
+  margin-bottom: 1rem;
+}
+
+/* Card Description */
+.value-card p {
+  font-size: 1.2rem;
+  color: #333;  /* Darker text for readability */
+  line-height: 1.6;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .values-section {
+    padding: 3rem 1.5rem;
   }
-  
+
   .values-heading h2 {
-    color: #001f3f;  /* Navy blue accent */
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+    font-size: 2.2rem;
   }
-  
-  .values-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
+
   .value-card {
-    background-color: #fff;
-    border: 2px solid #001f3f;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    flex: 1 1 300px;
-    max-width: 350px;
-    transition: transform 0.3s ease;
+    max-width: 90%;
   }
-  
-  .value-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .value-card h3 {
-    color: #001f3f;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-  }
-  
-  .value-card p {
-    font-size: 1.1rem;
-    color: #333;
-    line-height: 1.6;
-  }
-  
+}

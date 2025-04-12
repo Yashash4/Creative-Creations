@@ -1,34 +1,102 @@
+/* Summary Section */
 .summary-section {
   position: relative;
-  background-image: url('Y:\WEB\CCCC\client\public\images\img1.jpg'); /* Corrected path */
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-}
-
-.summary-overlay {
-  background-color: rgba(0, 0, 128, 0.6); /* Navy blue overlay with transparency */
-  height: 100%;
-  width: 100%;
+  background-color: #001f3f; /* Navy Blue background outside the border */
+  padding: 2rem; /* Padding around the section */
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 60vh; /* Height of the summary section */
 }
 
+/* Summary Content Text */
 .summary-content {
-  color: #fff;
-  padding: 2rem;
+  color: #fff; /* White text */
+  z-index: 2; /* Ensure the text is above the background */
   text-align: center;
-  max-width: 800px;
+  padding: 2rem;
+  width: 100%; /* Set width to 100% for responsiveness */
+  max-width: 1200px; /* Max width for larger screens */
 }
 
+/* Heading Styling */
 .summary-content h1 {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
+/* Paragraph Styling */
 .summary-content p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* CTA Button Styling */
+.cta-btn {
+  padding: 1rem 2rem;
+  background-color: #106ebe; /* Your primary color */
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #66ccff; /* Soft blue hover effect */
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .summary-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .summary-content p {
+    font-size: 1.2rem;
+  }
+
+  .summary-content {
+    padding: 1.5rem; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .summary-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .summary-content p {
+    font-size: 1rem;
+  }
+
+  .summary-section {
+    height: auto; /* Allow height to adjust on smaller screens */
+    padding: 1rem; /* Adjust padding */
+  }
+
+  .cta-btn {
+    font-size: 1rem; /* Smaller font for the button */
+    padding: 0.8rem 1.5rem; /* Adjust button padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .summary-content h1 {
+    font-size: 1.8rem; /* Even smaller font for very small screens */
+  }
+
+  .summary-content p {
+    font-size: 0.9rem; /* Smaller paragraph font */
+  }
+
+  .cta-btn {
+    font-size: 0.9rem; /* Smaller button text */
+    padding: 0.7rem 1.2rem; /* Adjust button padding */
+  }
 }

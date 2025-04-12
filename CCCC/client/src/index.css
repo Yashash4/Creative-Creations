@@ -1,18 +1,22 @@
-/* Reset & Global Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body, html {
-    font-family: Arial, sans-serif;
-    scroll-behavior: smooth;
-  }
-  h2 {
-    margin-bottom: 1rem;
-  }
-  section {
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Roboto', sans-serif; /* Clean sans-serif font */
+  scroll-behavior: smooth;
+  background-color: #f8f9fa; /* Light background for a modern look */
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+  overflow: hidden;
+}
