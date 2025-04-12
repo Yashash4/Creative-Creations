@@ -1,0 +1,34 @@
+.clients-section {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .clients-text h2 {
+    font-size: 2.5rem;
+    color: #001f3f;
+    margin-bottom: 1rem;
+  }
+  
+  .clients-text p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 1rem;
+  }
+  
+  .clients-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .logo-item img {
+    max-width: 150px;
+    max-height: 80px;
+    object-fit: contain;
+  }
+  

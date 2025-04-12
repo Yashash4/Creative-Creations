@@ -1,0 +1,46 @@
+.values-section {
+    padding: 4rem 2rem;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  
+  .values-heading h2 {
+    color: #001f3f;  /* Navy blue accent */
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .values-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .value-card {
+    background-color: #fff;
+    border: 2px solid #001f3f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    flex: 1 1 300px;
+    max-width: 350px;
+    transition: transform 0.3s ease;
+  }
+  
+  .value-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .value-card h3 {
+    color: #001f3f;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .value-card p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  

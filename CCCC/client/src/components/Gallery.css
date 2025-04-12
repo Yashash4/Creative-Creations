@@ -1,0 +1,45 @@
+.gallery-section {
+    overflow: hidden;
+    background-color: #fff;
+    padding: 2rem 0;
+  }
+  
+  .gallery-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .gallery-track {
+    display: flex;
+    animation: scroll 20s linear infinite;
+  }
+  
+  .gallery-item {
+    flex: 0 0 auto;
+    margin: 0 1rem;
+  }
+  
+  .gallery-item img {
+    height: 200px;
+    width: auto;
+    border-radius: 8px;
+  }
+  
+  .gallery-note {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Keyframes for continuous right-to-left scroll */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
