@@ -10,7 +10,6 @@ const ContactUs = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    // Process the form submission here (e.g., call an API)
     console.log(formData);
     alert('Message sent!');
     setFormData({ name: '', email: '', message: '' });

@@ -13,19 +13,55 @@ const WhyUs = () => {
 
   return (
     <section className="whyus-section">
-      <div className="whyus-heading">
-        <h2>Why Us</h2>
-      </div>
-      <div className="whyus-track-container">
+      <div className="whyus-container">
         <div className="whyus-track">
           {points.map((point, index) => (
-            <div key={index} className="whyus-card">
+            <div key={`1-${index}`} className="whyus-card">
               <p>{point}</p>
             </div>
           ))}
-          {/* Duplicate for continuous scrolling */}
           {points.map((point, index) => (
-            <div key={`dup-${index}`} className="whyus-card">
+            <div key={`2-${index}`} className="whyus-card">
+              <p>{point}</p>
+            </div>
+          ))}
+          {points.map((point, index) => (
+            <div key={`3-${index}`} className="whyus-card">
+              <p>{point}</p>
+            </div>
+          ))}
+          {points.map((point, index) => (
+            <div key={`4-${index}`} className="whyus-card">
+              <p>{point}</p>
+            </div>
+          ))}
+          {points.map((point, index) => (
+            <div key={`5-${index}`} className="whyus-card">
+              <p>{point}</p>
+            </div>
+          ))}
+          {points.map((point, index) => (
+            <div key={`6-${index}`} className="whyus-card">
+              <p>{point}</p>
+            </div>
+          ))}
+          {points.map((point, index) => (
+            <div key={`7-${index}`} className="whyus-card">
+              <p>{point}</p>
+            </div>
+          ))}
+          {points.map((point, index) => (
+            <div key={`8-${index}`} className="whyus-card">
+              <p>{point}</p>
+            </div>
+          ))}
+          {points.map((point, index) => (
+            <div key={`9-${index}`} className="whyus-card">
+              <p>{point}</p>
+            </div>
+          ))}
+          {points.map((point, index) => (
+            <div key={`10-${index}`} className="whyus-card">
               <p>{point}</p>
             </div>
           ))}

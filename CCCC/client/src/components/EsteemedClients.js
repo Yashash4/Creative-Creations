@@ -4,11 +4,11 @@ import './EsteemedClients.css';
 const EsteemedClients = () => {
   // Replace these with your actual client logo paths
   const logos = [
-    '/images/client1.png',
-    '/images/client2.png',
-    '/images/client3.png',
-    '/images/client4.png',
-    '/images/client5.png'
+    '/images/img1.jpg',
+    '/images/img1.jpg',
+    '/images/img1.jpg',
+    '/images/img1.jpg',
+    '/images/img1.jpg'
   ];
 
   return (
