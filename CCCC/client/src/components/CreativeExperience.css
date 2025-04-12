@@ -1,0 +1,84 @@
+.creative-experience {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+  }
+  
+  .ce-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #106EBE;
+    margin-bottom: 10px;
+  }
+  
+  .ce-subtitle {
+    font-size: 1.1rem;
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+  }
+  
+  .ce-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .ce-card {
+    padding: 20px;
+    border-radius: 10px;
+    color: #222;
+    font-size: 0.95rem;
+    transition: transform 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+  }
+  
+  .ce-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .ce-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .ce-card.green {
+    background-color: #0FFCBE;
+  }
+  
+  .ce-card.purple {
+    background-color: #cfc3ff;
+  }
+  
+  .ce-card.orange {
+    background-color: #ffb78c;
+  }
+  
+  .ce-card.blue {
+    background-color: #106EBE;
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  .ce-btn-container {
+    margin-top: 40px;
+  }
+  
+  .ce-button {
+    padding: 10px 25px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ce-button:hover {
+    background-color: #222;
+  }
+  
